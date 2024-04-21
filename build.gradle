@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'com.example.service'
+version = '1.0.0'
+sourceCompatibility = '1.8'
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // jersey
+    implementation 'org.glassfish.jersey.containers:jersey-container-servlet:2.35'
+    implementation 'org.glassfish.jersey.media:jersey-media-json-jackson:2.35'
+    implementation 'org.glassfish.jersey.inject:jersey-hk2:2.39.1'
+
+    implementation fileTree(dir: 'libs', include: '*.jar')
+}
+
+test {
+    useJUnitPlatform()
+}
