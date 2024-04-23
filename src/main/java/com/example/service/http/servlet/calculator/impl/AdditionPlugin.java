@@ -7,6 +7,7 @@
 //import javax.ws.rs.*;
 //import javax.ws.rs.core.MediaType;
 //
+//@Path("/v1")
 //public class AdditionPlugin implements CalculatorPlugin {
 //
 //    private static final String TAG = "AdditionPlugin";
